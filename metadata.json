@@ -1,0 +1,7 @@
+{
+  "name": "AgentCrash - AI Agent Reliability & Fault Testing",
+  "description": "Test, break, understand, and build reliable AI agents with fault injection, trace analysis, and sequence minimization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

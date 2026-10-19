@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+:root {
+  --color-sage-800: #3e4d3a;
+  --color-sage-700: #5c7057;
+  --color-sage-600: #718a6a;
+  --color-sage-500: #829a7d;
+  --color-sage-400: #a4bba0;
+  --color-sage-200: #d0e9d3;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars for clean code/table viewers in dark & light */
+html.dark ::-webkit-scrollbar-track {
+  background: #0d1310;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #233128;
+  border-radius: 9999px;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #364c3f;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f4f7f4;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbdcd0;
+  border-radius: 9999px;
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #a9c4b0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* LIGHT THEME OVERRIDES (Comprehensive, zero-flicker transformation) */
+html.light {
+  color-scheme: light;
+}
+
+html.light .bg-\[\#0d1310\],
+html.light .bg-\[\#0b0f17\] {
+  background-color: #f4f7f4 !important;
+}
+
+html.light .bg-\[\#131b16\],
+html.light .bg-\[\#111723\] {
+  background-color: #ffffff !important;
+  border-color: #dbe6dc !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+}
+
+html.light .bg-\[\#16211a\],
+html.light .bg-\[\#141c2a\],
+html.light .bg-\[\#141b28\] {
+  background-color: #f7faf7 !important;
+  border-color: #dbe6dc !important;
+}
+
+html.light .bg-\[\#18231d\],
+html.light .bg-\[\#162032\],
+html.light .bg-\[\#172235\] {
+  background-color: #edf3ee !important;
+  border-color: #d4e2d6 !important;
+}
+
+html.light .bg-\[\#0e1411\],
+html.light .bg-\[\#0b0e17\],
+html.light .bg-\[\#0c101a\] {
+  background-color: #edf3ee !important;
+  border-color: #dbe6dc !important;
+}
+
+html.light .border-\[\#223026\],
+html.light .border-\[\#1e2a3b\],
+html.light .border-\[\#233128\],
+html.light .border-\[\#223147\],
+html.light .border-\[\#233552\],
+html.light .border-\[\#293d31\] {
+  border-color: #dbe6dc !important;
+}
+
+html.light .border-\[\#1e2a22\],
+html.light .border-\[\#1f2b3e\],
+html.light .border-\[\#1b2638\] {
+  border-color: #e4ece5 !important;
+}
+
+html.light .divide-\[\#1b261f\] > :not([hidden]) ~ :not([hidden]),
+html.light .divide-\[\#182233\] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #e4ece5 !important;
+}
+
+/* Light typography adaptations */
+html.light .text-white {
+  color: #17221b !important;
+}
+
+html.light .text-slate-100 {
+  color: #1a261e !important;
+}
+
+html.light .text-slate-200 {
+  color: #243526 !important;
+}
+
+html.light .text-slate-300 {
+  color: #384c3c !important;
+}
+
+html.light .text-slate-400 {
+  color: #556c59 !important;
+}
+
+html.light .text-slate-500 {
+  color: #728a77 !important;
+}
+
+html.light .text-\[\#a4bba0\] {
+  color: #435e3d !important;
+}
+
+html.light .text-\[\#d0e9d3\] {
+  color: #253922 !important;
+}
+
+html.light .bg-\[\#14231b\] {
+  background-color: #e8f3ea !important;
+}
+
+html.light .bg-\[\#18261e\],
+html.light .bg-\[\#1a2820\],
+html.light .bg-\[\#15233c\] {
+  background-color: #edf5ee !important;
+}
+
+/* Form controls in light view */
+html.light select,
+html.light input,
+html.light textarea {
+  background-color: #ffffff !important;
+  color: #17221b !important;
+  border-color: #d8e4da !important;
+}
+
+html.light select:focus,
+html.light input:focus,
+html.light textarea:focus {
+  border-color: #5c7057 !important;
+}
+
+/* Table row hovers in light view */
+html.light .hover\:bg-\[\#18231d\]:hover,
+html.light .hover\:bg-\[\#162032\]:hover,
+html.light .hover\:bg-\[\#1c2a21\]:hover,
+html.light .hover\:bg-\[\#1a2820\]:hover {
+  background-color: #edf4ee !important;
+}
